@@ -3,7 +3,7 @@
   font-weight: 300;
   font-display: swap;
   // NOTE: 사용 시, 프로젝트에 맞게 아래 경로를 변경해야 합니다.
-  src: url('../font/Pretendard-Light.woff2') format('woff2'), url('../font/Pretendard-Light.woff') format('woff'), url('../font/Pretendard-Light.ttf') format('truetype');
+  src: url('/font/Pretendard-Light.woff2') format('woff2'), url('/font/Pretendard-Light.woff') format('woff'), url('/font/Pretendard-Light.ttf') format('truetype');
 }
 
 @font-face {
@@ -11,7 +11,7 @@
   font-weight: 400;
   font-display: swap;
   // NOTE: 사용 시, 프로젝트에 맞게 아래 경로를 변경해야 합니다.
-  src: url('../font/Pretendard-Regular.woff2') format('woff2'), url('../font/Pretendard-Regular.woff') format('woff'), url('../font/Pretendard-Regular.ttf') format('truetype');
+  src: url('/font/Pretendard-Regular.woff2') format('woff2'), url('/font/Pretendard-Regular.woff') format('woff'), url('/font/Pretendard-Regular.ttf') format('truetype');
 }
 
 @font-face {
@@ -19,7 +19,7 @@
   font-weight: 600;
   font-display: swap;
   // NOTE: 사용 시, 프로젝트에 맞게 아래 경로를 변경해야 합니다.
-  src: url('../font/Pretendard-SemiBold.woff2') format('woff2'), url('../font/Pretendard-SemiBold.woff') format('woff'), url('../font/Pretendard-SemiBold.ttf') format('truetype');
+  src: url('/font/Pretendard-SemiBold.woff2') format('woff2'), url('/font/Pretendard-SemiBold.woff') format('woff'), url('/font/Pretendard-SemiBold.ttf') format('truetype');
 }
 
 @font-face {
@@ -27,212 +27,86 @@
   font-weight: 700;
   font-display: swap;
   // NOTE: 사용 시, 프로젝트에 맞게 아래 경로를 변경해야 합니다.
-  src: url('../font/Pretendard-Bold.woff2') format('woff2'), url('../font/Pretendard-Bold.woff') format('woff'), url('../font/Pretendard-Bold.ttf') format('truetype');
+  src: url('/font/Pretendard-Bold.woff2') format('woff2'), url('/font/Pretendard-Bold.woff') format('woff'), url('/font/Pretendard-Bold.ttf') format('truetype');
 }
 
-.Typography-H1-B {
+@mixin typography($font-size, $weight, $letter-spacing) {
+  margin: 0;
+  padding: 0;
   font-family: Pretendard;
-  font-size: 2.5rem;
   font-style: normal;
-  font-weight: 700;
+  font-size: $font-size;
+  font-weight: $weight;
   line-height: 140%;
-  letter-spacing: -0.05rem;
+  letter-spacing: $letter-spacing;
 }
 
-.Typography-H1 {
-  font-family: Pretendard;
-  font-size: 2.5rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 140%;
-  letter-spacing: -0.05rem;
+@mixin typography-h1-b {
+  @include typography(2.5rem, 700, -0.05em);
 }
-
-.Typography-H2-B {
-  font-family: Pretendard;
-  font-size: 2rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 140%;
-  letter-spacing: -0.04rem;
+@mixin typography-h1 {
+  @include typography(2.5rem, 400, -0.05em);
 }
-
-.Typography-H2 {
-  font-family: Pretendard;
-  font-size: 2rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 140%;
-  letter-spacing: -0.04rem;
+@mixin typography-h2-b {
+  @include typography(2rem, 700, -0.04em);
 }
-
-.Typography-H3-B {
-  font-family: Pretendard;
-  font-size: 1.5rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 140%;
-  letter-spacing: -0.03rem;
+@mixin typography-h2 {
+  @include typography(2rem, 400, -0.04em);
 }
-
-.Typography-H3 {
-  font-family: Pretendard;
-  font-size: 1.5rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 140%;
-  letter-spacing: -0.03rem;
+@mixin typography-h3-b {
+  @include typography(1.5rem, 700, -0.03em);
 }
-
-.Typography-H4-B {
-  font-family: Pretendard;
-  font-size: 1.25rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 140%;
-  letter-spacing: -0.025rem;
+@mixin typography-h3 {
+  @include typography(1.5rem, 400, -0.03em);
 }
-
-.Typography-H4 {
-  font-family: Pretendard;
-  font-size: 1.25rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 140%;
-  letter-spacing: -0.025rem;
+@mixin typography-h4-b {
+  @include typography(1.25rem, 700, -0.025em);
 }
-
-.Typography-H5-B {
-  font-family: Pretendard;
-  font-size: 1.125rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 140%;
-  letter-spacing: -0.0225rem;
+@mixin typography-h4 {
+  @include typography(1.25rem, 400, -0.025em);
 }
-
-.Typography-H5 {
-  font-family: Pretendard;
-  font-size: 1.125rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 140%;
-  letter-spacing: -0.0225rem;
+@mixin typography-h5-b {
+  @include typography(1.125rem, 700, -0.0225em);
 }
-
-.Typography-H6-B {
-  font-family: Pretendard;
-  font-size: 1rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 140%;
-  letter-spacing: -0.02rem;
+@mixin typography-h5 {
+  @include typography(1.125rem, 400, -0.0225em);
 }
-
-.Typography-P1-B {
-  font-family: Pretendard;
-  font-size: 1rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 140%;
-  letter-spacing: -0.02rem;
+@mixin typography-h6-b {
+  @include typography(1rem, 700, -0.02em);
 }
-
-.Typography-P1-SB {
-  font-family: Pretendard;
-  font-size: 1rem;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 140%;
-  letter-spacing: -0.02rem;
+@mixin typography-p1-b {
+  @include typography(1rem, 700, -0.02em);
 }
-
-.Typography-P1 {
-  font-family: Pretendard;
-  font-size: 1rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 140%;
-  letter-spacing: -0.02rem;
+@mixin typography-p1-sb {
+  @include typography(1rem, 600, -0.02em);
 }
-
-.Typography-P2-B {
-  font-family: Pretendard;
-  font-size: 0.875rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 150%;
-  letter-spacing: -0.0175rem;
+@mixin typography-p1 {
+  @include typography(1rem, 400, -0.02em);
 }
-
-.Typography-P2-SB {
-  font-family: Pretendard;
-  font-size: 0.875rem;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 150%;
-  letter-spacing: -0.0175rem;
+@mixin typography-p2-b {
+  @include typography(0.875rem, 700, -0.0175em);
 }
-
-.Typography-P2 {
-  font-family: Pretendard;
-  font-size: 0.875rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 150%;
-  letter-spacing: -0.0175rem;
+@mixin typography-p2-sb {
+  @include typography(0.875rem, 600, -0.0175em);
 }
-
-.Typography-P3-B {
-  font-family: Pretendard;
-  font-size: 0.75rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 150%;
-  letter-spacing: -0.015rem;
+@mixin typography-p2 {
+  @include typography(0.875rem, 400, -0.0175em);
 }
-
-.Typography-P3-SB {
-  font-family: Pretendard;
-  font-size: 0.75rem;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 150%;
-  letter-spacing: -0.015rem;
+@mixin typography-p3-b {
+  @include typography(0.75rem, 700, -0.015em);
 }
-
-.Typography-P3 {
-  font-family: Pretendard;
-  font-size: 0.75rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 150%;
-  letter-spacing: -0.015rem;
+@mixin typography-p3-sb {
+  @include typography(0.75rem, 600, -0.015em);
 }
-
-.Typography-Caption-B {
-  font-family: Pretendard;
-  font-size: 0.625rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 150%;
-  letter-spacing: -0.0125rem;
+@mixin typography-p3 {
+  @include typography(0.75rem, 400, -0.015em);
 }
-
-.Typography-Caption-SB {
-  font-family: Pretendard;
-  font-size: 0.625rem;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 150%;
-  letter-spacing: -0.0125rem;
+@mixin typography-caption-b {
+  @include typography(0.625rem, 700, -0.0125em);
 }
-
-.Typography-Caption {
-  font-family: Pretendard;
-  font-size: 0.625rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 150%;
-  letter-spacing: -0.0125rem;
+@mixin typography-caption-sb {
+  @include typography(0.625rem, 600, -0.0125em);
+}
+@mixin typography-caption {
+  @include typography(0.625rem, 400, -0.0125em);
 }

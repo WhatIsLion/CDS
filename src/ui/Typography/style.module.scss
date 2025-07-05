@@ -1,0 +1,483 @@
+@use '../../style/break-point' as break;
+@use '../../style/font' as font;
+
+.Base--typography-h1-b {
+  @include font.typography-h1-b;
+}
+.Base--typography-h1 {
+  @include font.typography-h1;
+}
+.Base--typography-h2-b {
+  @include font.typography-h2-b;
+}
+.Base--typography-h2 {
+  @include font.typography-h2;
+}
+.Base--typography-h3-b {
+  @include font.typography-h3-b;
+}
+.Base--typography-h3 {
+  @include font.typography-h3;
+}
+.Base--typography-h4-b {
+  @include font.typography-h4-b;
+}
+.Base--typography-h4 {
+  @include font.typography-h4;
+}
+.Base--typography-h5-b {
+  @include font.typography-h5-b;
+}
+.Base--typography-h5 {
+  @include font.typography-h5;
+}
+.Base--typography-h6-b {
+  @include font.typography-h6-b;
+}
+.Base--typography-p1-b {
+  @include font.typography-p1-b;
+}
+.Base--typography-p1-sb {
+  @include font.typography-p1-sb;
+}
+.Base--typography-p1 {
+  @include font.typography-p1;
+}
+.Base--typography-p2-b {
+  @include font.typography-p2-b;
+}
+.Base--typography-p2-sb {
+  @include font.typography-p2-sb;
+}
+.Base--typography-p2 {
+  @include font.typography-p2;
+}
+.Base--typography-p3-b {
+  @include font.typography-p3-b;
+}
+.Base--typography-p3-sb {
+  @include font.typography-p3-sb;
+}
+.Base--typography-p3 {
+  @include font.typography-p3;
+}
+.Base--typography-caption-b {
+  @include font.typography-caption-b;
+}
+.Base--typography-caption-sb {
+  @include font.typography-caption-sb;
+}
+.Base--typography-caption {
+  @include font.typography-caption;
+}
+
+@media (max-width: break.$bp-sm) {
+  .Mobile--typography-h1-b {
+    @include font.typography-h1-b;
+  }
+  .Mobile--typography-h1 {
+    @include font.typography-h1;
+  }
+  .Mobile--typography-h2-b {
+    @include font.typography-h2-b;
+  }
+  .Mobile--typography-h2 {
+    @include font.typography-h2;
+  }
+  .Mobile--typography-h3-b {
+    @include font.typography-h3-b;
+  }
+  .Mobile--typography-h3 {
+    @include font.typography-h3;
+  }
+  .Mobile--typography-h4-b {
+    @include font.typography-h4-b;
+  }
+  .Mobile--typography-h4 {
+    @include font.typography-h4;
+  }
+  .Mobile--typography-h5-b {
+    @include font.typography-h5-b;
+  }
+  .Mobile--typography-h5 {
+    @include font.typography-h5;
+  }
+  .Mobile--typography-h6-b {
+    @include font.typography-h6-b;
+  }
+  .Mobile--typography-p1-b {
+    @include font.typography-p1-b;
+  }
+  .Mobile--typography-p1-sb {
+    @include font.typography-p1-sb;
+  }
+  .Mobile--typography-p1 {
+    @include font.typography-p1;
+  }
+  .Mobile--typography-p2-b {
+    @include font.typography-p2-b;
+  }
+  .Mobile--typography-p2-sb {
+    @include font.typography-p2-sb;
+  }
+  .Mobile--typography-p2 {
+    @include font.typography-p2;
+  }
+  .Mobile--typography-p3-b {
+    @include font.typography-p3-b;
+  }
+  .Mobile--typography-p3-sb {
+    @include font.typography-p3-sb;
+  }
+  .Mobile--typography-p3 {
+    @include font.typography-p3;
+  }
+  .Mobile--typography-caption-b {
+    @include font.typography-caption-b;
+  }
+  .Mobile--typography-caption-sb {
+    @include font.typography-caption-sb;
+  }
+  .Mobile--typography-caption {
+    @include font.typography-caption;
+  }
+}
+
+@media (min-width: break.$bp-sm) and (max-width: break.$bp-md) {
+  .Tablet--typography-h1-b {
+    @include font.typography-h1-b;
+  }
+  .Tablet--typography-h1 {
+    @include font.typography-h1;
+  }
+  .Tablet--typography-h2-b {
+    @include font.typography-h2-b;
+  }
+  .Tablet--typography-h2 {
+    @include font.typography-h2;
+  }
+  .Tablet--typography-h3-b {
+    @include font.typography-h3-b;
+  }
+  .Tablet--typography-h3 {
+    @include font.typography-h3;
+  }
+  .Tablet--typography-h4-b {
+    @include font.typography-h4-b;
+  }
+  .Tablet--typography-h4 {
+    @include font.typography-h4;
+  }
+  .Tablet--typography-h5-b {
+    @include font.typography-h5-b;
+  }
+  .Tablet--typography-h5 {
+    @include font.typography-h5;
+  }
+  .Tablet--typography-h6-b {
+    @include font.typography-h6-b;
+  }
+  .Tablet--typography-p1-b {
+    @include font.typography-p1-b;
+  }
+  .Tablet--typography-p1-sb {
+    @include font.typography-p1-sb;
+  }
+  .Tablet--typography-p1 {
+    @include font.typography-p1;
+  }
+  .Tablet--typography-p2-b {
+    @include font.typography-p2-b;
+  }
+  .Tablet--typography-p2-sb {
+    @include font.typography-p2-sb;
+  }
+  .Tablet--typography-p2 {
+    @include font.typography-p2;
+  }
+  .Tablet--typography-p3-b {
+    @include font.typography-p3-b;
+  }
+  .Tablet--typography-p3-sb {
+    @include font.typography-p3-sb;
+  }
+  .Tablet--typography-p3 {
+    @include font.typography-p3;
+  }
+  .Tablet--typography-caption-b {
+    @include font.typography-caption-b;
+  }
+  .Tablet--typography-caption-sb {
+    @include font.typography-caption-sb;
+  }
+  .Tablet--typography-caption {
+    @include font.typography-caption;
+  }
+}
+
+@media (min-width: break.$bp-md) and (max-width: break.$bp-lg) {
+  .Laptop--typography-h1-b {
+    @include font.typography-h1-b;
+  }
+  .Laptop--typography-h1 {
+    @include font.typography-h1;
+  }
+  .Laptop--typography-h2-b {
+    @include font.typography-h2-b;
+  }
+  .Laptop--typography-h2 {
+    @include font.typography-h2;
+  }
+  .Laptop--typography-h3-b {
+    @include font.typography-h3-b;
+  }
+  .Laptop--typography-h3 {
+    @include font.typography-h3;
+  }
+  .Laptop--typography-h4-b {
+    @include font.typography-h4-b;
+  }
+  .Laptop--typography-h4 {
+    @include font.typography-h4;
+  }
+  .Laptop--typography-h5-b {
+    @include font.typography-h5-b;
+  }
+  .Laptop--typography-h5 {
+    @include font.typography-h5;
+  }
+  .Laptop--typography-h6-b {
+    @include font.typography-h6-b;
+  }
+  .Laptop--typography-p1-b {
+    @include font.typography-p1-b;
+  }
+  .Laptop--typography-p1-sb {
+    @include font.typography-p1-sb;
+  }
+  .Laptop--typography-p1 {
+    @include font.typography-p1;
+  }
+  .Laptop--typography-p2-b {
+    @include font.typography-p2-b;
+  }
+  .Laptop--typography-p2-sb {
+    @include font.typography-p2-sb;
+  }
+  .Laptop--typography-p2 {
+    @include font.typography-p2;
+  }
+  .Laptop--typography-p3-b {
+    @include font.typography-p3-b;
+  }
+  .Laptop--typography-p3-sb {
+    @include font.typography-p3-sb;
+  }
+  .Laptop--typography-p3 {
+    @include font.typography-p3;
+  }
+  .Laptop--typography-caption-b {
+    @include font.typography-caption-b;
+  }
+  .Laptop--typography-caption-sb {
+    @include font.typography-caption-sb;
+  }
+  .Laptop--typography-caption {
+    @include font.typography-caption;
+  }
+}
+
+@media (min-width: break.$bp-lg) {
+  .Desktop--typography-h1-b {
+    @include font.typography-h1-b;
+  }
+  .Desktop--typography-h1 {
+    @include font.typography-h1;
+  }
+  .Desktop--typography-h2-b {
+    @include font.typography-h2-b;
+  }
+  .Desktop--typography-h2 {
+    @include font.typography-h2;
+  }
+  .Desktop--typography-h3-b {
+    @include font.typography-h3-b;
+  }
+  .Desktop--typography-h3 {
+    @include font.typography-h3;
+  }
+  .Desktop--typography-h4-b {
+    @include font.typography-h4-b;
+  }
+  .Desktop--typography-h4 {
+    @include font.typography-h4;
+  }
+  .Desktop--typography-h5-b {
+    @include font.typography-h5-b;
+  }
+  .Desktop--typography-h5 {
+    @include font.typography-h5;
+  }
+  .Desktop--typography-h6-b {
+    @include font.typography-h6-b;
+  }
+  .Desktop--typography-p1-b {
+    @include font.typography-p1-b;
+  }
+  .Desktop--typography-p1-sb {
+    @include font.typography-p1-sb;
+  }
+  .Desktop--typography-p1 {
+    @include font.typography-p1;
+  }
+  .Desktop--typography-p2-b {
+    @include font.typography-p2-b;
+  }
+  .Desktop--typography-p2-sb {
+    @include font.typography-p2-sb;
+  }
+  .Desktop--typography-p2 {
+    @include font.typography-p2;
+  }
+  .Desktop--typography-p3-b {
+    @include font.typography-p3-b;
+  }
+  .Desktop--typography-p3-sb {
+    @include font.typography-p3-sb;
+  }
+  .Desktop--typography-p3 {
+    @include font.typography-p3;
+  }
+  .Desktop--typography-caption-b {
+    @include font.typography-caption-b;
+  }
+  .Desktop--typography-caption-sb {
+    @include font.typography-caption-sb;
+  }
+  .Desktop--typography-caption {
+    @include font.typography-caption;
+  }
+}
+
+.TextAlign {
+  &--left {
+    text-align: left;
+  }
+  &--right {
+    text-align: right;
+  }
+  &--center {
+    text-align: center;
+  }
+  &--justify {
+    text-align: justify;
+  }
+  &--justify-all {
+    text-align: justify-all;
+  }
+  &--start {
+    text-align: start;
+  }
+  &--end {
+    text-align: end;
+  }
+  &--match-parent {
+    text-align: match-parent;
+  }
+  &--inherit {
+    text-align: inherit;
+  }
+  &--initial {
+    text-align: initial;
+  }
+  &--unset {
+    text-align: unset;
+  }
+}
+
+.VerticalAlign {
+  &--baseline {
+    vertical-align: baseline;
+  }
+  &--sub {
+    vertical-align: sub;
+  }
+  &--super {
+    vertical-align: super;
+  }
+  &--text-top {
+    vertical-align: text-top;
+  }
+  &--text-bottom {
+    vertical-align: text-bottom;
+  }
+  &--middle {
+    vertical-align: middle;
+  }
+  &--top {
+    vertical-align: top;
+  }
+  &--bottom {
+    vertical-align: bottom;
+  }
+  &--inherit {
+    vertical-align: inherit;
+  }
+  &--initial {
+    vertical-align: initial;
+  }
+  &--unset {
+    vertical-align: unset;
+  }
+}
+
+.WhiteSpace {
+  &--normal {
+    white-space: normal;
+  }
+  &--nowrap {
+    white-space: nowrap;
+  }
+  &--pre {
+    white-space: pre;
+  }
+  &--pre-wrap {
+    white-space: pre-wrap;
+  }
+  &--pre-line {
+    white-space: pre-line;
+  }
+  &--break-spaces {
+    white-space: break-spaces;
+  }
+  &--inherit {
+    white-space: inherit;
+  }
+  &--initial {
+    white-space: initial;
+  }
+  &--unset {
+    white-space: unset;
+  }
+}
+
+.WordBreak {
+  &--normal {
+    word-break: normal;
+  }
+  &--break-all {
+    word-break: break-all;
+  }
+  &--keep-all {
+    word-break: keep-all;
+  }
+  &--inherit {
+    word-break: inherit;
+  }
+  &--initial {
+    word-break: initial;
+  }
+  &--unset {
+    word-break: unset;
+  }
+}
